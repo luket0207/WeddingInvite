@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
   );
 
   const login = (password) => {
-    if (password === "password") {
+    if (password === "kanda" || password === "Kanda") {
       setAuthenticated(true);
       localStorage.setItem("authenticated", "true");
       return true;

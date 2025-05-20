@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import "./Login.scss";
 import { useAuth } from "../AuthContext";
 import { useLanguage } from "../Language/LanguageContext";
 import { useNavigate } from "react-router-dom";
+import Button from "../../Components/Button/Button";
 
 const Login = () => {
   const [password, setPassword] = useState("");
@@ -10,12 +12,11 @@ const Login = () => {
   const { language } = useLanguage();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     if (login(password)) {
       navigate(language === "jp" ? "/home-jp" : "/home-en");
     } else {
-      setError("Incorrect password");
+      setError(language === "jp" ? "パスワードが間違っています" : "Incorrect password");
     }
   };
 
@@ -25,18 +26,57 @@ const Login = () => {
   }
 
   return (
-    <div style={{ padding: "2rem" }}>
-      <h2>{language === "jp" ? "パスワードを入力してください" : "Enter Password"}</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-        />
-        <button type="submit">Login</button>
-        {error && <p style={{ color: "red" }}>{error}</p>}
-      </form>
+    <div className="login content-container">
+      {language === "en" && (
+        <div className="en">
+          <h2>Enter Password</h2>
+          <div className="form-input">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  handleSubmit();
+                }
+              }}
+            />
+          </div>
+          <Button onClick={handleSubmit} lang="en">
+            Login
+          </Button>
+          {error && <p style={{ color: "red" }}>{error}</p>}
+        </div>
+      )}
+      {language === "jp" && (
+        <div className="jp">
+          <h2>
+            パスワードを
+            <br />
+            入力してください
+          </h2>
+          <div className="form-input">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="パスワード"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  handleSubmit();
+                }
+              }}
+            />
+          </div>
+          <Button onClick={handleSubmit} lang="jp">
+            ログイン
+          </Button>
+          {error && <p style={{ color: "red" }}>{error}</p>}
+        </div>
+      )}
     </div>
   );
 };

@@ -15,10 +15,10 @@ const LanguageSelect = () => {
   return (
     <div className="content-container">
       <div className="en">
-        <h1>Select Language</h1>
+        <h1>Please Select Language</h1>
       </div>
       <div className="jp">
-        <h1>言語の選択</h1>
+        <h1>言語を選択して下さい</h1>
       </div>
 
       <div>
