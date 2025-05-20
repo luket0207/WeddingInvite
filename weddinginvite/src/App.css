@@ -1,0 +1,160 @@
+/* Global Reset */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
+/* App wrapper */
+.app-wrapper {
+  background-image: url("./Assets/Images/mobile-bg.PNG");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  user-select: auto !important;
+}
+
+.content-container {
+ background-color: #FFFFFFAA;
+ width: 85%;
+ margin: auto;
+ border-radius: 10px;
+ text-align: center;
+ padding: 30px 10px;
+}
+
+/* Font classes */
+.parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ------------------------
+   Page-wide English styles
+------------------------- */
+.en h1, 
+.en h2, 
+.en h3, 
+.en h4, 
+.en h5 {
+  font-family: "Parisienne", cursive;
+  color: #7A9E9F;
+}
+
+.en h1 { font-size: 2rem; }
+.en h2 { font-size: 1.75rem; }
+.en h3 { font-size: 1.5rem; }
+.en h4 { font-size: 1.25rem; }
+.en h5 { font-size: 1.1rem; }
+
+.en p,
+.en button,
+.en span,
+.en li,
+.en a,
+.en input,
+.en label,
+.en div {
+  font-family: "Cormorant Garamond", serif;
+  color: #3E3E3E;
+}
+
+/* ------------------------
+   Page-wide Japanese styles
+------------------------- */
+.jp h1, 
+.jp h2, 
+.jp h3, 
+.jp h4, 
+.jp h5 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #7A9E9F;
+  font-weight: 300;
+}
+
+.jp h1 { font-size: 2rem; }
+.jp h2 { font-size: 1.75rem; }
+.jp h3 { font-size: 1.5rem; }
+.jp h4 { font-size: 1.25rem; }
+.jp h5 { font-size: 1.1rem; }
+
+.jp p,
+.jp button,
+.jp span,
+.jp li,
+.jp a,
+.jp input,
+.jp label,
+.jp div {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #3E3E3E;
+  font-weight: 300;
+}
+
+/* ------------------------
+   Element-specific overrides
+------------------------- */
+/* English element on mixed-language page */
+.en.h1, .en.h2, .en.h3, .en.h4, .en.h5 {
+  font-family: "Parisienne", cursive;
+  color: #7A9E9F;
+}
+
+.en.p,
+.en.button,
+.en.span,
+.en.li,
+.en.a,
+.en.input,
+.en.label,
+.en.div {
+  font-family: "Cormorant Garamond", serif;
+  color: #3E3E3E;
+}
+
+/* Japanese element on mixed-language page */
+.jp.h1,
+.jp.h2,
+.jp.h3,
+.jp.h4,
+.jp.h5 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #7A9E9F;
+  font-weight: 300;
+}
+
+.jp.p,
+.jp.button,
+.jp.span,
+.jp.li,
+.jp.a,
+.jp.input,
+.jp.label,
+.jp.div {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #3E3E3E;
+  font-weight: 300;
+}

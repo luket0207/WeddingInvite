@@ -1,0 +1,36 @@
+@import "../../Assets/Scss/import.scss";
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.4;    
+    height: 1.6rem;      
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $accent-yellow;
+    color: $main-blue;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    min-width: 120px;
+    margin: 10px 0px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+  }
+  
+  .btn.en {
+    font-family: "Marcellus", serif;
+  }
+  
+  .btn.jp {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  
