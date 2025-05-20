@@ -16,7 +16,9 @@ const Login = () => {
     if (login(password)) {
       navigate(language === "jp" ? "/home-jp" : "/home-en");
     } else {
-      setError(language === "jp" ? "パスワードが間違っています" : "Incorrect password");
+      setError(
+        language === "jp" ? "パスワードが間違っています" : "Incorrect password"
+      );
     }
   };
 
@@ -44,10 +46,12 @@ const Login = () => {
               }}
             />
           </div>
+          {error && (
+            <p style={{ color: "red" }}>{error}</p>
+          )}
           <Button onClick={handleSubmit} lang="en">
             Login
           </Button>
-          {error && <p style={{ color: "red" }}>{error}</p>}
         </div>
       )}
       {language === "jp" && (
@@ -71,10 +75,12 @@ const Login = () => {
               }}
             />
           </div>
+          {error && (
+            <p style={{ color: "red" }}>{error}</p>
+          )}
           <Button onClick={handleSubmit} lang="jp">
             ログイン
           </Button>
-          {error && <p style={{ color: "red" }}>{error}</p>}
         </div>
       )}
     </div>

@@ -1,5 +1,7 @@
 /* Global Reset */
-body, html, #root {
+body,
+html,
+#root {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -19,16 +21,25 @@ body, html, #root {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  user-select: auto !important;
 }
 
 .content-container {
- background-color: #FFFFFFAA;
- width: 85%;
- margin: auto;
- border-radius: 10px;
- text-align: center;
- padding: 30px 10px;
+  background-color: #ffffffaa;
+  width: 70%;
+  max-height: 80%;
+  overflow-y: auto;
+  margin: auto;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+  .last-p {
+    margin-bottom: 30px;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 /* Font classes */
@@ -38,10 +49,10 @@ body, html, #root {
   font-style: normal;
 }
 
-.cormorant-garamond {
-  font-family: "Cormorant Garamond", serif;
+.ancizar-sans {
+  font-family: "Ancizar Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -55,64 +66,88 @@ body, html, #root {
 /* ------------------------
    Page-wide English styles
 ------------------------- */
-.en h1, 
-.en h2, 
-.en h3, 
-.en h4, 
+.en h1,
+.en h2,
+.en h3,
+.en h4,
 .en h5 {
   font-family: "Parisienne", cursive;
-  color: #7A9E9F;
+  color: #7a9e9f;
+}
+
+.en h1,
+.en h2 {
   margin-top: 0;
 }
 
-.en h1 { font-size: 2rem; }
-.en h2 { font-size: 1.75rem; }
-.en h3 { font-size: 1.5rem; }
-.en h4 { font-size: 1.25rem; }
-.en h5 { font-size: 1.1rem; }
+.en h1 {
+  font-size: 2rem;
+}
+.en h2 {
+  font-size: 1.75rem;
+}
+.en h3 {
+  font-size: 1.5rem;
+}
+.en h4 {
+  font-size: 1.25rem;
+}
+.en h5 {
+  font-size: 1.1rem;
+}
 
 .en p,
-.en button,
 .en span,
 .en li,
 .en a,
 .en input,
-.en label,
-.en div {
-  font-family: "Cormorant Garamond", serif;
-  color: #3E3E3E;
+.en label {
+  font-family: "Ancizar Sans", sans-serif;
+  color: #3e3e3e;
 }
 
 /* ------------------------
    Page-wide Japanese styles
 ------------------------- */
-.jp h1, 
-.jp h2, 
-.jp h3, 
-.jp h4, 
+.jp h1,
+.jp h2,
+.jp h3,
+.jp h4,
 .jp h5 {
   font-family: "Noto Sans JP", sans-serif;
-  color: #7A9E9F;
+  color: #7a9e9f;
   font-weight: 300;
+}
+
+.jp h1,
+.jp h2 {
   margin-top: 0;
 }
 
-.jp h1 { font-size: 2rem; }
-.jp h2 { font-size: 1.75rem; }
-.jp h3 { font-size: 1.5rem; }
-.jp h4 { font-size: 1.25rem; }
-.jp h5 { font-size: 1.1rem; }
+.jp h1 {
+  font-size: 2rem;
+}
+.jp h2 {
+  font-size: 1.75rem;
+}
+.jp h3 {
+  font-size: 1.5rem;
+}
+.jp h4 {
+  font-size: 1.25rem;
+}
+.jp h5 {
+  font-size: 1.1rem;
+}
 
 .jp p,
-.jp button,
 .jp span,
 .jp li,
 .jp a,
 .jp input,
-.jp label,
-.jp div {
+.jp label {
   font-family: "Noto Sans JP", sans-serif;
-  color: #3E3E3E;
+  color: #3e3e3e;
   font-weight: 300;
 }
 
@@ -120,21 +155,23 @@ body, html, #root {
    Element-specific overrides
 ------------------------- */
 /* English element on mixed-language page */
-.en.h1, .en.h2, .en.h3, .en.h4, .en.h5 {
+.en.h1,
+.en.h2,
+.en.h3,
+.en.h4,
+.en.h5 {
   font-family: "Parisienne", cursive;
-  color: #7A9E9F;
+  color: #7a9e9f;
 }
 
 .en.p,
-.en.button,
 .en.span,
 .en.li,
 .en.a,
 .en.input,
-.en.label,
-.en.div {
-  font-family: "Cormorant Garamond", serif;
-  color: #3E3E3E;
+.en.label {
+  font-family: "Ancizar Sans", sans-serif;
+  color: #3e3e3e;
 }
 
 /* Japanese element on mixed-language page */
@@ -144,19 +181,17 @@ body, html, #root {
 .jp.h4,
 .jp.h5 {
   font-family: "Noto Sans JP", sans-serif;
-  color: #7A9E9F;
+  color: #7a9e9f;
   font-weight: 300;
 }
 
 .jp.p,
-.jp.button,
 .jp.span,
 .jp.li,
 .jp.a,
 .jp.input,
-.jp.label,
-.jp.div {
+.jp.label {
   font-family: "Noto Sans JP", sans-serif;
-  color: #3E3E3E;
+  color: #3e3e3e;
   font-weight: 300;
 }
