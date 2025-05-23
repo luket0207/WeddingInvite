@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/WeddingInvite/static/css/main.7dba2d2d.css",
-    "main.js": "/WeddingInvite/static/js/main.2da3b133.js",
+    "main.css": "/WeddingInvite/static/css/main.5ef33d39.css",
+    "main.js": "/WeddingInvite/static/js/main.90cebb97.js",
     "static/js/453.ade125af.chunk.js": "/WeddingInvite/static/js/453.ade125af.chunk.js",
     "static/media/KandaEntrance.PNG": "/WeddingInvite/static/media/KandaEntrance.ffc793271a338d8c1918.PNG",
     "static/media/mobile-bg.PNG": "/WeddingInvite/static/media/mobile-bg.d8f1d038f4b8ce8e305f.PNG",
     "static/media/MyojinKaikan.PNG": "/WeddingInvite/static/media/MyojinKaikan.5c7d9ec2c816a2dfa0d1.PNG",
     "index.html": "/WeddingInvite/index.html",
-    "main.7dba2d2d.css.map": "/WeddingInvite/static/css/main.7dba2d2d.css.map",
-    "main.2da3b133.js.map": "/WeddingInvite/static/js/main.2da3b133.js.map",
+    "main.5ef33d39.css.map": "/WeddingInvite/static/css/main.5ef33d39.css.map",
+    "main.90cebb97.js.map": "/WeddingInvite/static/js/main.90cebb97.js.map",
     "453.ade125af.chunk.js.map": "/WeddingInvite/static/js/453.ade125af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7dba2d2d.css",
-    "static/js/main.2da3b133.js"
+    "static/css/main.5ef33d39.css",
+    "static/js/main.90cebb97.js"
   ]
 }
