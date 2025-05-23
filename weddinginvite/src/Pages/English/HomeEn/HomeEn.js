@@ -19,7 +19,7 @@ const HomeEn = () => {
         Thank you, and we can't wait to celebrate with you on our special day!
       </p>
 
-      <Button onClick={() => navigate("/directions-en")} lang="en">
+      <Button onClick={() => navigate("/rsvp-en")} lang="en">
         RSVP
       </Button>
       <Button onClick={() => navigate("/directions-en")} lang="en">

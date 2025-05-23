@@ -7,6 +7,7 @@ import HomeEn from "../../Pages/English/HomeEn/HomeEn";
 import HomeJp from "../../Pages/Japanese/HomeJp/HomeJp";
 import DirectionsEn from "../../Pages/English/DirectionsEn/DirectionsEn";
 import { useAuth } from "../AuthContext";
+import RsvpEn from "../../Pages/English/RsvpEn/RsvpEn";
 
 const ProtectedRoute = ({ children }) => {
   const { authenticated } = useAuth();
@@ -61,6 +62,14 @@ const AppRoutes = () => {
             element={
               <ProtectedRoute>
                 <DirectionsEn />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/rsvp-en"
+            element={
+              <ProtectedRoute>
+                <RsvpEn />
               </ProtectedRoute>
             }
           />

@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { AuthProvider } from "./Utils/AuthContext"; 
 import { LanguageProvider } from "./Utils/Language/LanguageContext";
 import AppRoutes from "./Utils/Routes/Routes";
