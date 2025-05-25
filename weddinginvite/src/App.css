@@ -5,7 +5,7 @@ html,
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
+  background-color: #f5eaca;
 }
 
 /* App wrapper */
@@ -101,7 +101,6 @@ html,
 }
 
 .en p,
-.en span,
 .en li,
 .en a,
 .en input,
@@ -145,7 +144,6 @@ html,
 }
 
 .jp p,
-.jp span,
 .jp li,
 .jp a,
 .jp input,
@@ -169,7 +167,6 @@ html,
 }
 
 .en.p,
-.en.span,
 .en.li,
 .en.a,
 .en.input,
@@ -190,7 +187,6 @@ html,
 }
 
 .jp.p,
-.jp.span,
 .jp.li,
 .jp.a,
 .jp.input,

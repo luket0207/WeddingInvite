@@ -22,7 +22,7 @@ const HomeEn = () => {
       <Button onClick={() => navigate("/rsvp-en")} lang="en">
         RSVP
       </Button>
-      <Button onClick={() => navigate("/directions-en")} lang="en">
+      <Button onClick={() => navigate("/wedding-info-en")} lang="en">
         Wedding Information
       </Button>
       <Button onClick={() => navigate("/directions-en")} lang="en">

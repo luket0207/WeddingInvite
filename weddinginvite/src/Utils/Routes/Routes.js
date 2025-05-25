@@ -8,6 +8,7 @@ import HomeJp from "../../Pages/Japanese/HomeJp/HomeJp";
 import DirectionsEn from "../../Pages/English/DirectionsEn/DirectionsEn";
 import { useAuth } from "../AuthContext";
 import RsvpEn from "../../Pages/English/RsvpEn/RsvpEn";
+import WeddingInfoEn from "../../Pages/English/WeddingInfoEn/WeddingInfoEn";
 
 const ProtectedRoute = ({ children }) => {
   const { authenticated } = useAuth();
@@ -70,6 +71,14 @@ const AppRoutes = () => {
             element={
               <ProtectedRoute>
                 <RsvpEn />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/wedding-info-en"
+            element={
+              <ProtectedRoute>
+                <WeddingInfoEn />
               </ProtectedRoute>
             }
           />

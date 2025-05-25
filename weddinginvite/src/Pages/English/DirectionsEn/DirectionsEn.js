@@ -53,8 +53,8 @@ const DirectionsEn = () => {
         shrine’s courtyard.
       </p>
       <p>
-        Once inside the courtyard, walk to the right-hand side until you see the
-        building shown below. Please enter this building.
+        Once inside the courtyard, walk towards the main shrine in front of you and on the right-hand side you will see the
+        building shown below. It has a red carpet at the entrance. Please enter this building.
       </p>
       <img src={MyojinKaikan} alt="Myojin Kaikan" />
       <h3>Map</h3>
